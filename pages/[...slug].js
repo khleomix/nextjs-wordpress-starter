@@ -1,5 +1,4 @@
 import Container from '@/components/atoms/Container'
-import RichText from '@/components/atoms/RichText'
 import Layout from '@/components/common/Layout'
 import Blocks from '@/components/molecules/Blocks'
 import getPagePropTypes from '@/functions/getPagePropTypes'
@@ -22,7 +21,6 @@ export default function Page({post}) {
     <Layout seo={{...post?.seo}}>
       <Container>
         <article className="innerWrap">
-          <RichText tag="h1">{post?.title}</RichText>
           <Blocks blocks={post?.blocks} />
         </article>
       </Container>
