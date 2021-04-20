@@ -1,7 +1,6 @@
 import Container from '@/components/atoms/Container'
 import Logo from '@/components/atoms/Logo'
-import {useWordPressContext} from '@/components/common/WordPressProvider'
-import AlgoliaSearch from '@/components/molecules/AlgoliaSearch'
+import { useWordPressContext } from '@/components/common/WordPressProvider'
 import Navigation from '@/components/molecules/Navigation'
 import Link from 'next/link'
 import styles from './Header.module.css'
@@ -23,13 +22,6 @@ export default function Header() {
       </a>
       <header className={styles.header}>
         <Container paddingTop={false} paddingBtm={false}>
-          <div className={styles.search}>
-            <AlgoliaSearch
-              className={styles.input}
-              useHistory={true}
-              usePlaceholder={true}
-            />
-          </div>
           <div className={styles.navigation}>
             <Link href="/">
               <a>
